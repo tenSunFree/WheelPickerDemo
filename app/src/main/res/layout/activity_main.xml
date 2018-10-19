@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eecc8d"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="343dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_slot"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.14">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.37"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.07">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.595"
+                android:background="#1e1e1e">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/highestScoreTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center_vertical|right"
+                        android:text="$3344"
+                        android:textColor="#222222"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.335">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.39">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.35"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.59">
+
+                    </LinearLayout>
+
+                    <!-- 由左數來, 第一個顯示欄 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.18">
+
+                        <com.zyyoona7.wheel.WheelView
+                            android:id="@+id/leftWheelView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            app:wv_cyclic="true"
+                            app:wv_dividerColor="#00000000"
+                            app:wv_normalItemTextColor="#e0222222"
+                            app:wv_selectedItemTextColor="#e0222222"
+                            app:wv_showDivider="true"
+                            app:wv_textSize="18sp"
+                            app:wv_visibleItems="3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.08">
+
+                    </LinearLayout>
+
+                    <!-- 由左數來, 第二個顯示欄 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2">
+
+                        <com.zyyoona7.wheel.WheelView
+                            android:id="@+id/middleWheelView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            app:wv_cyclic="true"
+                            app:wv_dividerColor="#00000000"
+                            app:wv_normalItemTextColor="#e0222222"
+                            app:wv_selectedItemTextColor="#e0222222"
+                            app:wv_showDivider="true"
+                            app:wv_textSize="18sp"
+                            app:wv_visibleItems="3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.09">
+
+                    </LinearLayout>
+
+                    <!-- 由左數來, 第三個顯示欄 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.17">
+
+                        <com.zyyoona7.wheel.WheelView
+                            android:id="@+id/rightWheelView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            app:wv_cyclic="true"
+                            app:wv_dividerColor="#00000000"
+                            app:wv_normalItemTextColor="#e0222222"
+                            app:wv_selectedItemTextColor="#e0222222"
+                            app:wv_showDivider="true"
+                            app:wv_textSize="18sp"
+                            app:wv_visibleItems="3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.7">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/interceptSwipeGestureFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.45">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="120dp"
+            android:layout_marginRight="70dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_start_button"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
