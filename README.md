@@ -12,9 +12,13 @@ WheelPicker
 預覽
 --------
 <p align="left">
-  <img src="https://i.imgur.com/PiAFman.png" width="260"/>
-  <img src="https://i.imgur.com/r9K8Ktb.png" width="260"/>
-  <img src="https://i.imgur.com/mKlFsl4.png" width="260"/>
+  <img src="https://i.imgur.com/PiAFman.png" width="460"/>
+</p> 
+<p align="left">
+  <img src="https://i.imgur.com/r9K8Ktb.png" width="460"/>
+</p> 
+<p align="left">
+  <img src="https://i.imgur.com/mKlFsl4.png" width="460"/>
 </p> 
 
 備註
