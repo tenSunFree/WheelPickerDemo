@@ -6,8 +6,8 @@
 
 取材自以下資源
 --------
+WheelPicker                                                          
 https://github.com/zyyoona7/WheelPicker                               
-WheelPicker
                           
 預覽
 --------
